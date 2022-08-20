@@ -188,3 +188,28 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.prueba1 {
+  max-width: 40rem;
+  background-color: rgba(179, 37, 37, 0.5);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px grey;
+
+}
+
+.login1 {
+  font-weight: bold;
+
+}
+
+.login2 {
+  background-color: rgba(162, 238, 234, 0.5);
+}
+
+.login3 {
+  background-color: rgba(162, 238, 175, 0.5);
+}
+
+.login4 {
+  border: black 1px solid;
+}

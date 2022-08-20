@@ -19,6 +19,7 @@ function sortCategories(criteria, array){
         result = array.sort(function(a, b) {
             if ( a.name > b.name ){ return -1; }
             if ( a.name < b.name ){ return 1; }
+            
             return 0;
         });
     }else if (criteria === ORDER_BY_PROD_COUNT){
