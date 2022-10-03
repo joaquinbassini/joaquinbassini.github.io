@@ -54,7 +54,7 @@ function showProductList(array) {
         if (((minCount == undefined) || (minCount != undefined && parseInt(product.cost) >= minCount)) &&
             ((maxCount == undefined) || (maxCount != undefined && parseInt(product.cost) <= maxCount))) {
             htmlContentToAppend += `
-        <div class="list-group-item list-group-item-action">
+        <div onclick="redirigir(${product.id})" class="list-group-item list-group-item-action">
             <div class="row">
                 <div class="col-3">
                     <img src="` + product.image + `" alt="product image" class="img-thumbnail">
@@ -88,6 +88,12 @@ function showProductList(array) {
     }
 
 }
+
+function redirigir(id) {
+    let idproduct = localStorage.setItem("productID", id);
+    window.location = "product-info.html"
+}
+
 
 let idlink = localStorage.getItem("catID")
 console.log(idlink)
